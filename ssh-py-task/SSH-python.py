@@ -44,7 +44,7 @@ print("Files created remotely:")
 for f in files:
     print("   ", f)
 
-# For loop to get the remote logsfile.txt locally
+# to get the remote logsfile.txt locally
 remote_file = f"{REMOTE_PATH}/logsfile.txt"
 local_file = os.path.join(LOCAL_PATH, "logsfile.txt")
 
@@ -57,3 +57,4 @@ except Exception as e:
 # Close SFTP and SSH connections
 sftp.close()
 ssh.close()
+print ("all is done ,congratulations!!")
