@@ -1,0 +1,47 @@
+SSH Log Management Program
+
+Task Description:
+Create a Python program that connects to a remote machine using SSH, checks or creates a specific directory on the local host, and handles log files automatically. 
+If no directory exists, the program should create one, copy and run a setup script (requirements.sh), then rerun itself to handle logs.
+
+Program Requirements:
+
+1. User Input:
+   - The program must take input from the user:
+     - SSH hostname or IP address
+     - Username
+     - Password
+      -directory name from user  
+
+2. SSH Connection:
+   - Establish an SSH connection to the remote machine using the given credentials.
+   - Close the SSH session safely after all tasks are complete.
+
+3. Directory Handling:
+   - On the other machine, check for a directory which is input from user 
+     - Create it.
+     - Display a message: "Directory created successfully."
+   Then send requirements.sh file and run it inside the directory created  
+   - After execution, rerun the Python program again 
+Requirements.sh behavior:
+   - The script should
+     - Create a folder named logs inside the same directory (if not exists).
+     - Go inside the logs directory.
+     - Create 26 log files named a.log, b.log, ..., z.log.
+     - Each log file should contain a single letter (matching its filename).
+     - Print a message when finished: "Logs created successfully."
+
+
+ - After requirements.sh has run:
+Print msg to let you know that all is done  and :
+     - Copy the content of each triggered log file into the local host current directory in a copied_logs directory .
+     - Create a new text file named copied_files.txt that lists the names of all copied files in  copied_logs directory .
+
+7. Session Management:
+   - Ensure the SSH session is closed cleanly after all operations.
+Finally dear on GitHub create readme file to explain ur work and share it with us on GitHub on fadliko’s repo 
+Thank you 
+git@github.com:mofadl237/NTI_PYTHON.git
+
+
+
