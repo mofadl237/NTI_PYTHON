@@ -1,0 +1,2 @@
+1- create File for examble Fadl.py or .ipynb
+2- Task One ===> get user (hostname , username,password,directory) valid Data
